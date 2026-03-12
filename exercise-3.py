@@ -26,4 +26,4 @@ def calc(num1, num2, operation="multiply"):
     else:
         return "Invalid operation"
 
-print(calc(10, 5, "divide"))
+print(calc(10, 5, "dsad"))

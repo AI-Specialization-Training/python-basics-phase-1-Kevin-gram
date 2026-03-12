@@ -10,3 +10,17 @@
 # return the string You can't convert {value} into a {type}., so again you use a formatted string.
 
 # ============================================================================
+def data_type_conversion(value,data_type):
+   try:
+      if data_type == "float":
+        return float(value)
+      elif data_type == "str":
+        return str(value)
+      elif data_type == "int":
+        return int(value)
+      else:
+       return "unknown data type"
+   except ValueError:
+    return f"You can't convert {value} into a {data_type}."
+     
+print(data_type_conversion("nosense", "float"))
