@@ -7,3 +7,23 @@
 # a string that is one of the following `add`, `subtract`, `multiply`, `divide`, `modulo`, `int_divide` (for integer division) and `power`. 
 # The function returns the result.
 # ============================================================================
+
+def calc(num1, num2, operation="multiply"):
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2  
+    elif operation == "divide":
+        return num1 / num2
+    elif operation == "modulo":
+        return num1 % num2
+    elif operation == "int_divide":
+        return num1 // num2
+    elif operation == "power":
+        return num1 ** num2
+    else:
+        return "Invalid operation"
+
+print(calc(10, 5, "divide"))
