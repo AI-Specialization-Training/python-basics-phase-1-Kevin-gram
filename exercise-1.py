@@ -6,3 +6,7 @@
 #       what the function returns, not what it prints.
 # ============================================================================
 
+def hello_user(name="user"):
+    return f"Hello, {name}!"
+
+print(hello_user("kevin"))
